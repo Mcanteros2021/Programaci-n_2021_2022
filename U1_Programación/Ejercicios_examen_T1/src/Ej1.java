@@ -12,15 +12,19 @@ public class Ej1 {
 
         Integer espacio = altura/2 + 1;
         Integer vacio = 1;
-        Integer ancho = altura;
+        Integer margen = altura/2;
 
-        for (int i = 0; i < altura/2 + 2; i++) {
+        for (int i = 0; i < altura/2 + 2 + margen; i++) {
             System.out.print(" ");
         }
         System.out.print("*");
 
         for (int i = 0; i <= altura - 3; i++) {
             System.out.println(" ");
+            for (int j = 0; j < margen; j++) {
+                System.out.print(" ");
+            }
+            System.out.print(" ");
             if(i == 0){
                 for (int j = 0; j < altura/2 + 2; j++) {
                     System.out.print(" ");
@@ -49,7 +53,7 @@ public class Ej1 {
 
         }
         System.out.println("");
-        for (int i = 0; i < altura/2 + 2; i++) {
+        for (int i = 0; i < altura/2 + 2 + margen; i++) {
             System.out.print(" ");
         }
         System.out.print("Y");
