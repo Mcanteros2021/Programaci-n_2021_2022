@@ -1,0 +1,3 @@
+public enum Ciudades_capitales {
+    SEVILLA,HUELVA,CADIZ,MALAGA,JAEN,GRANADA,ALMERIA,CORDOBA;
+}
